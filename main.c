@@ -27,13 +27,13 @@
 int main(void)
 {	
 	
-	/*enabling the IRQ_0 i.e watch dog interrupt in stm32f411ceu6*/
+	// /*enabling the IRQ_0 i.e watch dog interrupt in stm32f411ceu6*/
 	
-	/*Step:1 setting the pending bit*/
-	 NVIC_ISPR(0) |= (1U<<18); /* the interrupt is generated but present in pending state */
+	// /*Step:1 setting the pending bit*/
+	//  NVIC_ISPR(0) |= (1U<<18); /* the interrupt is generated but present in pending state */
 
-	/*enabling the interrupt*/
-	  NVIC_ISER(0) |= (1U<<18);     /*Enable the interrupt check the interrupt in pending state*/
+	// /*enabling the interrupt*/
+	//   NVIC_ISER(0) |= (1U<<18);     /*Enable the interrupt check the interrupt in pending state*/
 
 	for(;;);
   
